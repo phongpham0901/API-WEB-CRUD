@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD API Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        margin-bottom: 20px;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        padding: 10px;
+        margin: 5px;
+        width: calc(100% - 22px);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CRUD API Example</h1>
+
+    <form id="crud-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="text" id="type" placeholder="Type" />
+      <input
+        type="number"
+        id="price"
+        placeholder="Price"
+        required
+        step="0.01"
+        min="0"
+      />
+      <input type="hidden" id="item-id" />
+      <button type="submit">Save</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="data-table">
+        <!-- Dữ liệu sẽ được thêm vào đây -->
+      </tbody>
+    </table>
+
+    <script>
+      const apiUrl = "https://localhost:7204/api/Foods"; // Sử dụng URL API
+
+      // Lấy dữ liệu từ API và hiển thị trong bảng
+      // Lấy dữ liệu từ API và hiển thị trong bảng
+      async function fetchData() {
+        try {
+          const response = await fetch(apiUrl);
+          const data = await response.json();
+          const dataTable = document.getElementById("data-table");
+
+          // Xóa nội dung cũ
+          dataTable.innerHTML = "";
+
+          // Thêm dữ liệu vào bảng
+          data.forEach((item) => {
+            dataTable.innerHTML += `
+                <tr>
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td>${item.description}</td>
+                    <td>${item.type || "N/A"}</td>
+                    <td>${item.price}</td>
+                    <td class="actions">
+                        <button onclick="editItem('${item.id}', '${
+              item.name
+            }', '${item.description.replace(/'/g, "\\'")}', '${
+              item.type || ""
+            }', ${item.price})">Edit</button>
+                        <button onclick="deleteItem('${
+                          item.id
+                        }')">Delete</button>
+                    </td>
+                </tr>
+            `;
+          });
+        } catch (error) {
+          console.error("Lỗi khi lấy dữ liệu:", error);
+        }
+      }
+
+      // Thêm hoặc cập nhật dữ liệu
+      document
+        .getElementById("crud-form")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const description = document.getElementById("description").value;
+          const type = document.getElementById("type").value;
+          const price = document.getElementById("price").value;
+          const id = document.getElementById("item-id").value;
+
+          const newItem = { name, description, type, price };
+
+          try {
+            let response;
+            if (id) {
+              // Nếu có ID -> Cập nhật
+              response = await fetch(`${apiUrl}/${id}`, {
+                method: "PUT",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(newItem),
+              });
+            } else {
+              // Nếu không có ID -> Thêm mới
+              response = await fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(newItem),
+              });
+            }
+
+            if (response.ok) {
+              document.getElementById("crud-form").reset();
+              fetchData(); // Cập nhật lại bảng dữ liệu sau khi thêm/cập nhật
+            } else {
+              console.error("Lỗi khi gửi dữ liệu.");
+            }
+          } catch (error) {
+            console.error("Lỗi khi gửi dữ liệu:", error);
+          }
+        });
+
+      // Xóa dữ liệu
+      async function deleteItem(id) {
+        try {
+          const response = await fetch(`${apiUrl}/${id}`, {
+            method: "DELETE",
+          });
+
+          if (response.ok) {
+            fetchData(); // Cập nhật lại bảng dữ liệu sau khi xóa
+          } else {
+            console.error("Lỗi khi xóa dữ liệu.");
+          }
+        } catch (error) {
+          console.error("Lỗi khi xóa dữ liệu:", error);
+        }
+      }
+
+      // Chỉnh sửa dữ liệu (đổ dữ liệu lên form)
+      function editItem(id, name, description, type, price) {
+        document.getElementById("name").value = name;
+        document.getElementById("description").value = description;
+        document.getElementById("type").value = type;
+        document.getElementById("price").value = price;
+        document.getElementById("item-id").value = id;
+      }
+
+      // Lấy dữ liệu khi trang được load
+      fetchData();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TK Web\\WebApplicationFood\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|d:\\tk web\\webapplicationfood\\webapplicationfood\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|solutionrelative:webapplicationfood\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|d:\\tk web\\webapplicationfood\\webapplicationfood\\controllers\\foodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|solutionrelative:webapplicationfood\\controllers\\foodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|d:\\tk web\\webapplicationfood\\webapplicationfood\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|solutionrelative:webapplicationfood\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|d:\\tk web\\webapplicationfood\\webapplicationfood\\models\\entities\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|solutionrelative:webapplicationfood\\models\\entities\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|d:\\tk web\\webapplicationfood\\webapplicationfood\\webapplicationfood.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|solutionrelative:webapplicationfood\\webapplicationfood.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|d:\\tk web\\webapplicationfood\\webapplicationfood\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D18316EB-CDD0-4BCA-9DB4-344E53A9567E}|WebApplicationFood\\WebApplicationFood.csproj|solutionrelative:webapplicationfood\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FoodsController.cs",
+              "DocumentMoniker": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Controllers\\FoodsController.cs",
+              "RelativeDocumentMoniker": "WebApplicationFood\\Controllers\\FoodsController.cs",
+              "ToolTip": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Controllers\\FoodsController.cs",
+              "RelativeToolTip": "WebApplicationFood\\Controllers\\FoodsController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAIwGQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T04:00:51.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplicationFood\\Program.cs",
+              "ToolTip": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Program.cs",
+              "RelativeToolTip": "WebApplicationFood\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T03:40:34.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Food.cs",
+              "DocumentMoniker": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Models\\Entities\\Food.cs",
+              "RelativeDocumentMoniker": "WebApplicationFood\\Models\\Entities\\Food.cs",
+              "ToolTip": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Models\\Entities\\Food.cs",
+              "RelativeToolTip": "WebApplicationFood\\Models\\Entities\\Food.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T03:28:55.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebApplicationFood.http",
+              "DocumentMoniker": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\WebApplicationFood.http",
+              "RelativeDocumentMoniker": "WebApplicationFood\\WebApplicationFood.http",
+              "ToolTip": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\WebApplicationFood.http",
+              "RelativeToolTip": "WebApplicationFood\\WebApplicationFood.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-25T03:19:45.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplicationFood\\appsettings.json",
+              "ToolTip": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\appsettings.json",
+              "RelativeToolTip": "WebApplicationFood\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-25T03:19:41.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplicationFood\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\TK Web\\WebApplicationFood\\WebApplicationFood\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplicationFood\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-25T03:00:31.066Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
